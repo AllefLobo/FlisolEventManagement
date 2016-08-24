@@ -1,3 +1,6 @@
-/**
- * Created by estilon on 20/08/16.
- */
+var express = require("express");
+var router = express.Router();
+
+router.post("\event", function (req, res) {
+   res.json({stub: 1});
+});
