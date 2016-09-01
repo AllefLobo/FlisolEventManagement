@@ -36,7 +36,7 @@ describe("Event", function () {
 
         it("error must not be null, id manager is not valid", function (done) {
             event.create({
-                manager: "568f25afgjfgjad134569d078b4567",
+                manager: "568f25afgjfgjad1hh34569d078b4567",
                 title: "Just a event",
                 descrition: "Just a event like everyone else",
                 place : "somewhere"
