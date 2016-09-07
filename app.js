@@ -9,6 +9,8 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 var eventApi= require('./routes/event-api');
 
+var config = require('config');
+
 var app = express();
 
 // view engine setup
