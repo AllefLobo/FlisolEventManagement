@@ -1,6 +1,6 @@
-var mongoose = require('mongoose');
+var mongoose = require("mongoose");
 
-var config = require('config');
+var config = require("config");
 
 var Schema = mongoose.Schema;
 
@@ -13,5 +13,5 @@ var EventSchema = Schema({
     place: String
 });
 
-module.exports = mongoose.model('Event', EventSchema);
+module.exports = mongoose.model("Event", EventSchema);
 
