@@ -6,6 +6,9 @@ var chaiHttp = require("chai-http");
 var should = chai.should();
 var expect = chai.expect;
 
+var log4js = require('log4js');
+var logger = log4js.getLogger();
+
 var Event = require("../model/event");
 
 chai.use(chaiHttp);
@@ -15,7 +18,7 @@ describe("Event", function () {
     beforeEach(function (done) {
         Event.remove({}, function (err) {
             if(err){
-                console.log(err);
+                logger.debug(err);
             }
             done();
         });
@@ -80,7 +83,7 @@ describe("API", function () {
         describe("/POST Event", function () {
             it("it should creat a event", function (done) {
                 chai.request(server)
-                    .post('/api/event')
+                    .post("/api/event")
                     .send({
                         manager: "568f25aad134569d078b4567",
                         title: "Just a event",
@@ -88,9 +91,9 @@ describe("API", function () {
                         place : "somewhere"
                     })
                     .end(function (err, res) {
-                        expect(null).to.be.a('null');
+                        expect(err).to.be.a("null");
                         res.should.have.status(200);
-                        res.body.should.be.a('object');
+                        res.body.should.be.a("object");
                         done();
                     });
             });
