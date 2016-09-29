@@ -1,3 +1,4 @@
 {
-  "DBHost": "mongodb://flisolEvent:cqyq9yhc@ds041486.mlab.com:41486/flisol"
+  "DBHost": "mongodb://flisolEvent:cqyq9yhc@ds041486.mlab.com:41486/flisol",
+  "env": "test"
 }

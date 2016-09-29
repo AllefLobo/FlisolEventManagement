@@ -1,3 +1,4 @@
 {
-  "DBHost": "mongodb://localhost/flisol-event-management"
+  "DBHost": "mongodb://localhost/flisol-event-management",
+  "env": "dev"
 }
