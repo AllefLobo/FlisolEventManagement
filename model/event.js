@@ -2,12 +2,12 @@ var mongoose = require("mongoose");
 
 var config = require("config");
 
-var Schema = mongoose.Schema;
+var schema = mongoose.Schema;
 
 mongoose.connect(config.DBHost);
 
-var EventSchema = Schema({
-    manager: {type: Schema.ObjectId, required: true},
+var EventSchema = schema({
+    manager: {type: schema.ObjectId, required: true},
     title: String,
     description: String,
     place: String
