@@ -18,7 +18,7 @@ describe("Event", function () {
     beforeEach(function (done) {
         Event.remove({}, function (err) {
             if(err){
-                logger.debug(err);
+                logger.error(err);
             }
             done();
         });
