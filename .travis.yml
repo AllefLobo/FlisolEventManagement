@@ -8,4 +8,3 @@ after_success:
 notifications:
   email:
     - italosestilon@gmail.com
-    - felipenevesbrito@gmail.com
