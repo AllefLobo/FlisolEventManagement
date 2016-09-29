@@ -1,7 +1,6 @@
 process.env.NODE_ENV = "test";
 
 var chai = require("chai");
-var assert = chai.assert;
 var server = require("../app");
 var chaiHttp = require("chai-http");
 var should = chai.should();
@@ -89,7 +88,7 @@ describe("API", function () {
                         res.body.should.be.a('object');
                         done();
                     });
-            })
-        })
+            });
+        });
     });
 });
