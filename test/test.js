@@ -11,7 +11,7 @@ var Event = require("../model/event");
 chai.use(chaiHttp);
 
 describe("Event", function () {
-
+    this.timeout(60000);
     beforeEach(function (done) {
         Event.remove({}, function (err) {
             done();
