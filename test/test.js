@@ -6,7 +6,7 @@ var chaiHttp = require("chai-http");
 var should = chai.should();
 var expect = chai.expect;
 
-var log4js = require('log4js');
+var log4js = require("log4js");
 var logger = log4js.getLogger();
 
 var Event = require("../model/event");
