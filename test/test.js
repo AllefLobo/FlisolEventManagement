@@ -4,6 +4,7 @@ var chai = require("chai");
 var server = require("../app");
 var chaiHttp = require("chai-http");
 var should = chai.should();
+var expect = chai.expect;
 
 var Event = require("../model/event");
 
@@ -13,6 +14,9 @@ describe("Event", function () {
     this.timeout(60000);
     beforeEach(function (done) {
         Event.remove({}, function (err) {
+            if(err){
+                console.log(err);
+            }
             done();
         });
     });
@@ -84,6 +88,7 @@ describe("API", function () {
                         place : "somewhere"
                     })
                     .end(function (err, res) {
+                        expect(null).to.be.a('null');
                         res.should.have.status(200);
                         res.body.should.be.a('object');
                         done();
