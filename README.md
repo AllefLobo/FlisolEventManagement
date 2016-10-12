@@ -29,7 +29,7 @@ The event is organized by the various free software local communities and develo
 
 ## Contribute
 
-We would love for you to contribute to *FlisolEventManagement>*, check the ``LICENSE`` file for more info.
+We would love for you to contribute to *FlisolEventManagement*, check the ``LICENSE`` file for more info.
 
 ## Meta
 
